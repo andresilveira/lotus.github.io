@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+   <title>Lotus</title>
+   <subtitle>Lotus framework blog</subtitle>
+   <link href="http://lotusrb.org/atom.xml" rel="self"/>
+   <link href="http://lotusrb.org/blog"/>
+   <updated>2015-05-31T22:47:00+07:00</updated>
+   <id>http://lotusrb.org/blog</id>
+   <author>
+     <name>Lotus</name>
+     <email>admin@lotusrb.org</email>
+   </author>
+
+     <entry>
+       <title>Weekly Changelog</title>
+       <id>http://lotusrb.org/blog/2015/05/31/weekly-changelog.html</id>
+       <link rel="alternate" href="http://lotusrb.org/blog/2015/05/31/weekly-changelog.html"/>
+       <updated>2015-05-31T22:47:00+07:00</updated>
+       <author>
+         <name>Trung Lê</name>
+       </author>
+       <summary>
+         Changelog from May 16 2015 to May 31 2015
+
+       </summary>
+       <content type="html"><![CDATA[<h2>Releases</h2>
+
+<ul>
+<li>Released lotusrb 0.3.2</li>
+<li>Released lotus-controller 0.4.3</li>
+<li>Released lotus-view 0.4.1</li>
+<li>Released lotus-model 0.3.2</li>
+<li>Released lotus-utils 0.4.3</li>
+<li>Released lotus-validations 0.3.2</li>
+<li>Released lotus-router 0.4.0</li>
+<li>Released lotus-helpers 0.1.0</li>
+</ul>
+
+<h2>Completed</h2>
+
+<ul>
+<li>[<a href="https://github.com/nguyenngoc2505">Ngoc Nguyen</a>] Action generator doesn&rsquo;t respect Ruby file naming [<a href="https://github.com/lotus/lotus/pull/232">details</a>]</li>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] Don&rsquo;t rely on config.before(:suite) to preload Lotus apps in testing [<a href="https://github.com/lotus/lotus/pull/231">details</a>]</li>
+<li>[<a href="https://github.com/nguyenngoc2505">Ngoc Nguyen</a>] Model generator creates wrong RSpec files [<a href="https://github.com/lotus/lotus/pull/230">details</a>]</li>
+<li>[<a href="https://github.com/AlfonsoUceda">Alfonso</a>] Added send_file method in action for sending files [<a href="https://github.com/lotus/controller/pull/112">details</a>]</li>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] Introduced #content as API to render optional contents [<a href="https://github.com/lotus/view/pull/70">details</a>]</li>
+<li>[<a href="https://github.com/nguyenngoc2505">Ngoc Nguyen</a>] Model generator doesn&rsquo;t respect Ruby file naming [<a href="https://github.com/lotus/lotus/pull/229">details</a>]</li>
+<li>[<a href="https://github.com/francois">François Beausoleil</a>] Make TypeError messages even more useful [<a href="https://github.com/lotus/utils/pull/79">details</a>]</li>
+<li>[<a href="https://github.com/AlfonsoUceda">Alfonso</a>] Enhanced cookies syntax options [<a href="https://github.com/lotus/lotus/pull/227">details</a>]</li>
+<li>[<a href="https://github.com/deepj">deepj</a>] Introduce invalid? method as an opposite to valid? [<a href="https://github.com/lotus/validations/pull/64">details</a>]</li>
+<li>[<a href="https://github.com/AlfonsoUceda">Alfonso</a>] Fixed action generator, raise exception if action name isn&rsquo;t supplied [<a href="https://github.com/lotus/lotus/pull/223">details</a>]</li>
+<li>[<a href="https://github.com/dsnipe">Dmitry Tymchuk</a>] Fix for Dirty tracking inplace modifications [<a href="https://github.com/lotus/model/pull/187">details</a>]</li>
+<li>[<a href="https://github.com/AlfonsoUceda">Alfonso</a>] Add automatic :secure option [<a href="https://github.com/lotus/lotus/pull/222">details</a>]</li>
+<li>[<a href="https://github.com/deepj">deepj</a>] Test only against JRuby 9k on Travis [<a href="https://github.com/lotus/view/pull/67">details</a>]</li>
+<li>[<a href="https://github.com/deepj">deepj</a>] Fix failling deprecation_test.rb under JRuby 9000 [<a href="https://github.com/lotus/utils/pull/78">details</a>]</li>
+<li>[<a href="https://github.com/AlfonsoUceda">Alfonso</a>] Added automatically expires option if max_age option presents [<a href="https://github.com/lotus/controller/pull/110">details</a>]</li>
+<li>[<a href="https://github.com/jeremyf">Jeremy Friesen</a>] Wordsmithing README [<a href="https://github.com/lotus/controller/pull/109">details</a>]</li>
+<li>[<a href="https://github.com/jeremyf">Jeremy Friesen</a>] Wordsmithing [<a href="https://github.com/lotus/validations/pull/63">details</a>]</li>
+<li>[<a href="https://github.com/AlfonsoUceda">Alfonso</a>] Rack::Lint compatibility [<a href="https://github.com/lotus/controller/pull/108">details</a>]</li>
+<li>[<a href="https://github.com/jeremyf">Jeremy Friesen</a>] Wordsmithing [<a href="https://github.com/lotus/model/pull/185">details</a>]</li>
+<li>[<a href="https://github.com/jeremyf">Jeremy Friesen</a>] Wordsmithing the REAMDE.md typo [<a href="https://github.com/lotus/validations/pull/62">details</a>]</li>
+<li>[<a href="https://github.com/AlfonsoUceda">Alfonso</a>] Added routing helpers to actions [<a href="https://github.com/lotus/lotus/pull/219">details</a>]</li>
+<li>[<a href="https://github.com/peterberkenbosch">Peter Berkenbosch</a>] Add raw SQL support with execute() [<a href="https://github.com/lotus/model/pull/184">details</a>]</li>
+<li>[<a href="https://github.com/maqnouch">AQNOUCH Mohammed</a>] Fix typos [<a href="https://github.com/lotus/lotus/pull/217">details</a>]</li>
+<li>[<a href="https://github.com/nguyenngoc2505">Ngoc Nguyen</a>] Add Lotus.env [<a href="https://github.com/lotus/lotus/pull/216">details</a>]</li>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] When coerce Utils::Attributes to Hash don&rsquo;t rely on #to_h of the single values [<a href="https://github.com/lotus/utils/pull/76">details</a>]</li>
+<li>[<a href="https://github.com/stsc3000">Steffen Schildknecht</a>] Add missing Lotus::Interactor include in examples [<a href="https://github.com/lotus/utils/pull/75">details</a>]</li>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] Fix internet explorer HTTP accept [<a href="https://github.com/lotus/controller/pull/105">details</a>]</li>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] Ensure Attributes#to_h to force Hash values [<a href="https://github.com/lotus/utils/pull/74">details</a>]</li>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] Ensure nested attributes to have correct Hash serialization. [<a href="https://github.com/lotus/validations/pull/60">details</a>]</li>
+<li>[<a href="https://github.com/LeoTeam">Team Leo</a>] Refactor update timestamps [<a href="https://github.com/lotus/model/pull/182">details</a>]</li>
+</ul>
+
+<h2>Development</h2>
+
+<ul>
+<li>[<a href="https://github.com/Sdogruyol">Serdar Dogruyol</a>] Add Platform Control for Code Reloading [<a href="https://github.com/lotus/lotus/pull/238">details</a>]</li>
+<li>[<a href="https://github.com/sungwoncho">Sung Won Cho</a>] Add Destroy command [<a href="https://github.com/lotus/lotus/pull/194">details</a>]</li>
+<li>[<a href="https://github.com/smt116">Maciej Malecki</a>] Preload application in config/environment file. [<a href="https://github.com/lotus/lotus/pull/180">details</a>]</li>
+<li>[<a href="https://github.com/vinioliveira">Vinícius Oliveira</a>] CLI db migrate/rollback  [<a href="https://github.com/lotus/lotus/pull/161">details</a>]</li>
+<li>[<a href="https://github.com/thecatwasnot">Cole</a>] Adding migration generator [<a href="https://github.com/lotus/lotus/pull/139">details</a>]</li>
+<li>[<a href="https://github.com/joneslee85">Trung Lê</a>] Add Lotus::Model::Migration [<a href="https://github.com/lotus/model/pull/144">details</a>]</li>
+<li>[<a href="https://github.com/lotus">Lotus</a>] Implement SQL inner join [<a href="https://github.com/lotus/model/pull/102">details</a>]</li>
+<li>[<a href="https://github.com/heruku">Uku Taht</a>] Associations [<a href="https://github.com/lotus/model/pull/56">details</a>]</li>
+<li>[<a href="https://github.com/rodzyn">Marcin Olichwirowicz</a>] Custom validations [<a href="https://github.com/lotus/validations/pull/49">details</a>]</li>
+<li>[<a href="https://github.com/lotus">Lotus</a>] Form helper [<a href="https://github.com/lotus/helpers/pull/16">details</a>]</li>
+<li>[<a href="https://github.com/tomkadwill">Tom Kadwill</a>] Number formatting helper [<a href="https://github.com/lotus/helpers/pull/11">details</a>]</li>
+<li>[<a href="https://github.com/fuadsaud">Fuad Saud</a>] Add helper for word wrapping [<a href="https://github.com/lotus/helpers/pull/1">details</a>]</li>
+</ul>
+
+<h2>Roadmap</h2>
+
+<p><a href="http://bit.ly/lotusrb-roadmap">Trello board</a></p>
+]]></content>
+     </entry>
+     <entry>
+       <title>Announcing Lotus v0.3.2</title>
+       <id>http://lotusrb.org/blog/2015/05/22/announcing-lotus-032.html</id>
+       <link rel="alternate" href="http://lotusrb.org/blog/2015/05/22/announcing-lotus-032.html"/>
+       <updated>2015-05-22T14:14:00+07:00</updated>
+       <author>
+         <name>Luca Guidi</name>
+       </author>
+       <summary>
+         Lotus patch release: Automatic secure cookies, action file send and routing helpers, optional contents for views, Lotus.root and bug fixes.
+
+       </summary>
+       <content type="html"><![CDATA[<h2>Features</h2>
+
+<p>This patch release ships new minor features.</p>
+
+<h3>Automatic Secure Cookies</h3>
+
+<p>According to the cookies RFC, we can specify a <code>Secure</code> option, to make a coookie available only under HTTPS.
+If we are using a crypted connection in production, Lotus will automatically send this option to increase security level.
+In development mode, where SSL is turned off, that value is omitted.</p>
+
+<p>We can manually handle this setting, according to our custom needs.</p>
+<pre class="language-ruby ruby"><code><span class="c1"># apps/web/application.rb</span>
+<span class="k">module</span> <span class="nn">Web</span>
+  <span class="k">class</span> <span class="nc">Application</span>
+    <span class="n">configure</span> <span class="k">do</span>
+      <span class="c1"># ...</span>
+      <span class="n">cookies</span> <span class="ss">secure: </span><span class="kp">true</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<h3>Action Routing Helpers</h3>
+
+<p>There is a new API available for routes interaction.
+It&rsquo;s available as private method in actions and provides useful facilities to generate URLs for named routes.</p>
+<pre class="language-ruby ruby"><code><span class="c1"># apps/web/controllers/home/index.rb</span>
+<span class="k">module</span> <span class="nn">Web::Controllers::Home</span>
+  <span class="k">class</span> <span class="nc">Index</span>
+    <span class="kp">include</span> <span class="no">Web</span><span class="o">::</span><span class="no">Action</span>
+
+    <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+      <span class="nb">puts</span> <span class="n">routes</span><span class="p">.</span><span class="nf">root_path</span>
+      <span class="nb">puts</span> <span class="n">routes</span><span class="p">.</span><span class="nf">root_url</span>
+
+      <span class="c1"># equivalent to</span>
+
+      <span class="nb">puts</span> <span class="n">routes</span><span class="p">.</span><span class="nf">path</span><span class="p">(</span><span class="ss">:root</span><span class="p">)</span>
+      <span class="nb">puts</span> <span class="n">routes</span><span class="p">.</span><span class="nf">url</span><span class="p">(</span><span class="ss">:root</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>The same feature for views was already introduced by v0.3.0.</p>
+
+<h3>Action Send File</h3>
+
+<p>Another useful addition for actions is <code>#send_file</code>.
+It accepts a Ruby <code>File</code> objects and deliver to the client.
+It supports automatic MIME type handling, Conditional GET, HEAD requests and chunked responses (via <code>Range</code> header).</p>
+<pre class="language-ruby ruby"><code><span class="c1"># apps/web/controllers/home/index.rb</span>
+<span class="k">module</span> <span class="nn">Web::Controllers::Documents</span>
+  <span class="k">class</span> <span class="nc">Download</span>
+    <span class="kp">include</span> <span class="no">Web</span><span class="o">::</span><span class="no">Action</span>
+
+    <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+      <span class="n">send_file</span> <span class="no">File</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'path/to/document.txt'</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<h3>Optional Content For Views</h3>
+
+<p>If we want to render optional contents such as sidebar links or page specific javascripts, we can use <code>#content</code>
+It accepts a key that represents a method that should be available within the rendering context.
+That context is made of the locals, and the methods that view and layout respond to.
+If the context can&rsquo;t dispatch that method, it returns <code>nil</code>.</p>
+
+<p>Given the following layout template.</p>
+<pre class="language-ruby erb"><code><span class="cp">&lt;!doctype HTML&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="c">&lt;!-- ... --&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="c">&lt;!-- ... --&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="n">content</span> <span class="ss">:footer</span> <span class="cp">%&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+
+<p>We have two views, one responds to <code>#footer</code> (<code>Web::Views::Products::Show</code>) and the other doesn&rsquo;t (<code>Web::Views::Products::Index</code>).
+When the first is rendered, <code>content</code> gives back the returning value of <code>#footer</code>.
+In the other case, <code>content</code> returns <code>nil</code>.</p>
+<pre class="language-ruby ruby"><code><span class="k">module</span> <span class="nn">Products</span>
+  <span class="k">class</span> <span class="nc">Index</span>
+    <span class="kp">include</span> <span class="no">Lotus</span><span class="o">::</span><span class="no">View</span>
+  <span class="k">end</span>
+
+  <span class="k">class</span> <span class="nc">Show</span>
+    <span class="kp">include</span> <span class="no">Lotus</span><span class="o">::</span><span class="no">View</span>
+
+    <span class="k">def</span> <span class="nf">footer</span>
+      <span class="s2">"contents for footer"</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<h3>Lotus.root</h3>
+
+<p>We have introduced <code>Lotus.root</code> as facility to easily get the top level directory of the project.</p>
+
+<h2>Bug Fixes</h2>
+
+<p>This release comes with some bug fixes for code generators file naming, RSpec support and dirty tracking.</p>
+
+<div style="display: inline">
+  <iframe src="https://ghbtns.com/github-btn.html?user=lotus&repo=lotus&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
+  <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="Announcing Lotus v0.3.2" data-url="http://lotusrb.org/blog/2015/05/22/announcing-lotus-032.html" data-count="horizontal" data-style="facebook">Vote on Hacker News</a>
+  <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
+  <script type="text/javascript">
+    reddit_url = "http://lotusrb.org/blog/2015/05/22/announcing-lotus-032.html";
+  </script>
+  <script type="text/javascript" src="//www.redditstatic.com/button/button1.js"></script>
+</div>
+]]></content>
+     </entry>
+     <entry>
+       <title>Announcing Lotus v0.3.1</title>
+       <id>http://lotusrb.org/blog/2015/05/15/announcing-lotus-031.html</id>
+       <link rel="alternate" href="http://lotusrb.org/blog/2015/05/15/announcing-lotus-031.html"/>
+       <updated>2015-05-15T22:09:00+07:00</updated>
+       <author>
+         <name>Luca Guidi</name>
+       </author>
+       <summary>
+         Lotus patch release: RESTful nested resource(s), dirty tracking and timestamps for entities, improved code generators, bug fixes.
+
+       </summary>
+       <content type="html"><![CDATA[<h2>Features</h2>
+
+<p>This patch release ships new features and improved code generators.</p>
+
+<h3>RESTful nested resource(s)</h3>
+
+<p>RESTful resource(s) can be nested with infinite levels.</p>
+<pre class="language-ruby ruby"><code><span class="c1"># apps/web/config/routes.rb</span>
+<span class="n">resources</span> <span class="ss">:users</span> <span class="k">do</span>
+  <span class="n">resource</span>  <span class="ss">:avatar</span>
+  <span class="n">resources</span> <span class="ss">:events</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>This generates the following routes:</p>
+<pre class="language-ruby plaintext"><code>% lotus routes
+
+     new_user_avatar GET, HEAD  /users/:user_id/avatar/new
+         user_avatar POST       /users/:user_id/avatar
+         user_avatar GET, HEAD  /users/:user_id/avatar
+    edit_user_avatar GET, HEAD  /users/:user_id/avatar/edit
+         user_avatar PATCH      /users/:user_id/avatar
+         user_avatar DELETE     /users/:user_id/avatar
+         user_events GET, HEAD  /users/:user_id/events
+      new_user_event GET, HEAD  /users/:user_id/events/new
+         user_events POST       /users/:user_id/events
+          user_event GET, HEAD  /users/:user_id/events/:id
+     edit_user_event GET, HEAD  /users/:user_id/events/:id/edit
+          user_event PATCH      /users/:user_id/events/:id
+          user_event DELETE     /users/:user_id/events/:id
+               users GET, HEAD  /users
+            new_user GET, HEAD  /users/new
+               users POST       /users
+                user GET, HEAD  /users/:id
+           edit_user GET, HEAD  /users/:id/edit
+                user PATCH      /users/:id
+                user DELETE     /users/:id
+</code></pre>
+
+<p>The corresponding endpoints are actions like <code>Web::Controllers::Users::Avatar::Create</code> or <code>Web::Controllers::Users::Events::Show</code>.</p>
+
+<h3>Dirty Tracking</h3>
+
+<p>Entities can now track changed attributes and dirty status.</p>
+<pre class="language-ruby ruby"><code><span class="c1"># lib/bookshelf/entities/user.rb</span>
+<span class="k">class</span> <span class="nc">User</span>
+  <span class="kp">include</span> <span class="no">Lotus</span><span class="o">::</span><span class="no">Entity</span>
+  <span class="kp">include</span> <span class="no">Lotus</span><span class="o">::</span><span class="no">Entity</span><span class="o">::</span><span class="no">DirtyTracking</span>
+  <span class="n">attributes</span> <span class="ss">:name</span><span class="p">,</span> <span class="ss">:age</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>This new feature is activated by including <code>Lotus::Entity::DirtyTracking</code>.
+It exposes <code>#changed?</code> and <code>#changed_attributes</code>.</p>
+<pre class="language-ruby ruby"><code><span class="c1"># Usage</span>
+<span class="n">user</span> <span class="o">=</span> <span class="no">User</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">name: </span><span class="s1">'L'</span><span class="p">)</span>
+<span class="n">user</span><span class="p">.</span><span class="nf">changed?</span> <span class="c1"># =&gt; false</span>
+
+<span class="n">user</span><span class="p">.</span><span class="nf">age</span> <span class="o">=</span> <span class="mi">33</span>
+<span class="n">user</span><span class="p">.</span><span class="nf">changed?</span>           <span class="c1"># =&gt; true</span>
+<span class="n">user</span><span class="p">.</span><span class="nf">changed_attributes</span> <span class="c1"># =&gt; {:age=&gt;33}</span>
+
+<span class="n">user</span> <span class="o">=</span> <span class="no">UserRepository</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+<span class="n">user</span><span class="p">.</span><span class="nf">changed?</span> <span class="c1"># =&gt; false</span>
+
+<span class="n">user</span><span class="p">.</span><span class="nf">update</span><span class="p">(</span><span class="ss">name: </span><span class="s1">'Luca'</span><span class="p">)</span>
+<span class="n">user</span><span class="p">.</span><span class="nf">changed?</span>           <span class="c1"># =&gt; true</span>
+<span class="n">user</span><span class="p">.</span><span class="nf">changed_attributes</span> <span class="c1"># =&gt; {:name=&gt;"Luca"}</span>
+
+<span class="n">user</span> <span class="o">=</span> <span class="no">UserRepository</span><span class="p">.</span><span class="nf">update</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+<span class="n">user</span><span class="p">.</span><span class="nf">changed?</span> <span class="c1"># =&gt; false</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="no">UserRepository</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="nf">id</span><span class="p">)</span>
+<span class="n">result</span><span class="p">.</span><span class="nf">changed?</span> <span class="c1"># =&gt; false</span>
+</code></pre>
+
+<p>When an entity is initialized and after it&rsquo;s created or updated, the state is clean.
+If we mutate the state with an assigment or with <code>Entity#update</code>, <code>#changed?</code> returns true.</p>
+
+<h3>Timestamps</h3>
+
+<p>If an entity has <code>:created_at</code> and/or <code>:updated_at</code> attributes, when it&rsquo;s persisted, the repository will take care of manage these values for us.</p>
+<pre class="language-ruby ruby"><code><span class="c1"># lib/bookshelf/entities/user.rb</span>
+<span class="k">class</span> <span class="nc">User</span>
+  <span class="kp">include</span> <span class="no">Lotus</span><span class="o">::</span><span class="no">Entity</span>
+  <span class="n">attributes</span> <span class="ss">:name</span><span class="p">,</span> <span class="ss">:created_at</span><span class="p">,</span> <span class="ss">:updated_at</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>We have mapped both these attributes as <code>DateTime</code>.</p>
+<pre class="language-ruby ruby"><code>
+<span class="n">user</span> <span class="o">=</span> <span class="no">User</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">name: </span><span class="s1">'L'</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">user</span><span class="p">.</span><span class="nf">created_at</span> <span class="c1"># =&gt; nil</span>
+<span class="nb">puts</span> <span class="n">user</span><span class="p">.</span><span class="nf">updated_at</span> <span class="c1"># =&gt; nil</span>
+
+<span class="n">user</span> <span class="o">=</span> <span class="no">UserRepository</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">user</span><span class="p">.</span><span class="nf">created_at</span><span class="p">.</span><span class="nf">to_s</span> <span class="c1"># =&gt; "2015-05-15T10:12:20+00:00"</span>
+<span class="nb">puts</span> <span class="n">user</span><span class="p">.</span><span class="nf">updated_at</span><span class="p">.</span><span class="nf">to_s</span> <span class="c1"># =&gt; "2015-05-15T10:12:20+00:00"</span>
+
+<span class="n">user</span><span class="p">.</span><span class="nf">name</span> <span class="o">=</span> <span class="s2">"Luca"</span>
+<span class="n">user</span>      <span class="o">=</span> <span class="no">UserRepository</span><span class="p">.</span><span class="nf">update</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">user</span><span class="p">.</span><span class="nf">created_at</span><span class="p">.</span><span class="nf">to_s</span> <span class="c1"># =&gt; "2015-05-15T10:12:20+00:00"</span>
+<span class="nb">puts</span> <span class="n">user</span><span class="p">.</span><span class="nf">updated_at</span><span class="p">.</span><span class="nf">to_s</span> <span class="c1"># =&gt; "2015-05-15T10:12:23+00:00"</span>
+</code></pre>
+
+<h3>Application Generator</h3>
+
+<p>Lotus default architecture is named <a href="https://github.com/lotus/lotus#container-architecture"><em>Container</em></a>, as it allows to run multiple Lotus (and Rack) applications within the same Ruby process.</p>
+
+<p>When we generate a new project with <code>lotus new bookshelf</code>, it creates a default application named <code>Web</code>, under <code>apps/web</code>.
+This architecture enforces a separation between components and it will make our life easier <a href="http://lucaguidi.com/2015/05/05/lotus-and-microservices.html">if we want extract microservices</a> at a later stage.</p>
+
+<p>If we want to introduce a new component in our container (eg. an admin pane, a metrics dashboard), we can use the new application generator.</p>
+<pre class="language-ruby plaintext"><code>lotus generate app admin
+</code></pre>
+
+<p>This command will add a new application named <code>Admin</code> under <code>apps/admin</code>, and it will be available under the <code>/admin</code> URL namespace.</p>
+
+<h3>Model Generator</h3>
+
+<p>This last feature is really helpful while developing our domain model.
+It generates an <strong>entity</strong>, a <strong>repository</strong> and the related <strong>test files</strong>.</p>
+<pre class="language-ruby shell"><code><span class="gp">% </span>lotus generate model user
+  create  lib/bookshelf/entities/user.rb
+  create  lib/bookshelf/repositories/user_repository.rb
+  create  spec/bookshelf/entities/user_spec.rb
+  create  spec/bookshelf/repositories/user_repository_spec.rb
+</code></pre>
+
+<h2>What&rsquo;s Next</h2>
+
+<p>New features such as migrations, form helpers and improved security are under development right now.
+We&rsquo;re pushing to ship soon.</p>
+
+<div style="display: inline">
+  <iframe src="https://ghbtns.com/github-btn.html?user=lotus&repo=lotus&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
+  <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="Announcing Lotus v0.3.1" data-url="http://lotusrb.org/blog/2015/05/15/announcing-lotus-031.html" data-count="horizontal" data-style="facebook">Vote on Hacker News</a>
+  <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
+  <script type="text/javascript">
+    reddit_url = "http://lotusrb.org/blog/2015/05/15/announcing-lotus-031.html";
+  </script>
+  <script type="text/javascript" src="//www.redditstatic.com/button/button1.js"></script>
+</div>
+]]></content>
+     </entry>
+     <entry>
+       <title>Weekly Changelog</title>
+       <id>http://lotusrb.org/blog/2015/05/15/weekly-changelog.html</id>
+       <link rel="alternate" href="http://lotusrb.org/blog/2015/05/15/weekly-changelog.html"/>
+       <updated>2015-05-15T19:56:00+07:00</updated>
+       <author>
+         <name>Trung Lê</name>
+       </author>
+       <summary>
+         Changelog from Apr 28th to May 15th 2015
+
+       </summary>
+       <content type="html"><![CDATA[<h2>Releases</h2>
+
+<ul>
+<li>Released lotusrb 0.3.1</li>
+<li>Released lotus-validations 0.3.1</li>
+<li>Released lotus-view 0.4.0</li>
+<li>Released lotus-controller 0.4.2</li>
+<li>Released lotus-model 0.3.1</li>
+<li>Released lotus-utils 0.4.2</li>
+</ul>
+
+<h2>Completed</h2>
+
+<ul>
+<li>[<a href="https://github.com/guilhermeFranco">Guilherme Franco</a>] Add block conditions to #where() for memory adapter [<a href="https://github.com/lotus/model/pull/180">details</a>]</li>
+<li>[<a href="https://github.com/AlfonsoUceda">Alfonso Uceda</a>] Added nested routes [<a href="https://github.com/lotus/router/pull/51">details</a>]</li>
+<li>[<a href="https://github.com/AlfonsoUceda">Alfonso Uceda</a>] Rack::Lint compatibility [<a href="https://github.com/lotus/controller/pull/108">details</a>]</li>
+<li>[<a href="https://github.com/AlfonsoUceda">Alfonso Uceda</a>] String Singularization [<a href="https://github.com/lotus/utils/pull/73">details</a>]</li>
+<li>[<a href="https://github.com/nguyenngoc2505">Ngọc Nguyễn</a>] Add Lotus.env [<a href="https://github.com/lotus/lotus/pull/216">details</a>]</li>
+<li>[<a href="https://github.com/hieuk09">Hiếu Nguyễn</a>] Application generator [<a href="https://github.com/lotus/lotus/pull/214">details</a>]</li>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] Fix internet explorer HTTP accept [<a href="https://github.com/lotus/controller/pull/105">details</a>]</li>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] String pluralization [<a href="https://github.com/lotus/utils/pull/72">details</a>]</li>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] Ensure Attributes#to_h to force Hash values [<a href="https://github.com/lotus/utils/pull/74">details</a>]</li>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] When coerce Utils::Attributes to Hash don&rsquo;t rely on #to_h of the single values [<a href="https://github.com/lotus/utils/pull/76">details</a>]</li>
+<li>[<a href="https://github.com/peterberkenbosch">Peter Berkenbosch</a>] Add raw SQL support with execute() [<a href="https://github.com/lotus/model/pull/184">details</a>]</li>
+</ul>
+
+<h2>Development</h2>
+
+<ul>
+<li>[<a href="https://github.com/mymai91">My Mai</a>] [<a href="https://github.com/dondinhit">Dôn Đinh</a>] Introduce Lotus.root [<a href="https://github.com/lotus/lotus/pull/213">details</a>]</li>
+<li>[<a href="https://github.com/sungwoncho">Sung Won Cho</a>] Add Destroy CLI [<a href="https://github.com/lotus/lotus/pull/194">details</a>]</li>
+<li>[<a href="https://github.com/dsnipe">Dmitry Tymchuk</a>] Add repository timestamps [<a href="https://github.com/lotus/model/pull/169">details</a>]</li>
+<li>[<a href="https://github.com/joneslee85">Trung Lê</a>] Database migrations [<a href="https://github.com/lotus/model/pull/144">details</a>]</li>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] Form helpers [<a href="https://github.com/lotus/helpers/pull/16">details</a>]</li>
+<li>[<a href="https://github.com/tomkadwill">Tom Kadwill</a>] Number formatting helpers [<a href="https://github.com/lotus/helpers/pull/11">details</a>]</li>
+<li>[<a href="https://github.com/rodzyn">Marcin Olichwirowicz</a>] Custom validations [<a href="https://github.com/lotus/validations/pull/49">details</a>]</li>
+</ul>
+
+<h2>Roadmap</h2>
+
+<p><a href="http://bit.ly/lotusrb-roadmap">Trello board</a></p>
+]]></content>
+     </entry>
+     <entry>
+       <title>Weekly Changelog</title>
+       <id>http://lotusrb.org/blog/2015/04/27/weekly-changelog.html</id>
+       <link rel="alternate" href="http://lotusrb.org/blog/2015/04/27/weekly-changelog.html"/>
+       <updated>2015-04-27T12:14:00+07:00</updated>
+       <author>
+         <name>Trung Lê</name>
+       </author>
+       <summary>
+         Changelog from Apr 20th to Apr 27th 2015
+
+       </summary>
+       <content type="html"><![CDATA[<h2>Releases</h2>
+
+<p>-</p>
+
+<h2>Completed</h2>
+
+<ul>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] String pluralization [<a href="https://github.com/lotus/utils/pull/72">details</a>]</li>
+</ul>
+
+<h2>Development</h2>
+
+<ul>
+<li>[<a href="https://github.com/guilhermeFranco">Guilherme Franco</a>] Add block conditions to #where() for memory adapter [<a href="https://github.com/lotus/model/pull/180">details</a>]</li>
+<li>[<a href="https://github.com/mymai91">My Mai</a>] [<a href="https://github.com/dondinhit">Dôn Đinh</a>] Introduce Lotus.root [<a href="https://github.com/lotus/lotus/pull/213">details</a>]</li>
+<li>[<a href="https://github.com/AlfonsoUceda">Alfonso Uceda</a>] Added nested routes [<a href="https://github.com/lotus/router/pull/51">details</a>]</li>
+<li>[<a href="https://github.com/sungwoncho">Sung Won Cho</a>] Add Destroy CLI [<a href="https://github.com/lotus/lotus/pull/194">details</a>]</li>
+<li>[<a href="https://github.com/dsnipe">Dmitry Tymchuk</a>] Add repository timestamps [<a href="https://github.com/lotus/model/pull/169">details</a>]</li>
+<li>[<a href="https://github.com/joneslee85">Trung Lê</a>] Database migrations [<a href="https://github.com/lotus/model/pull/144">details</a>]</li>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] Form helpers [<a href="https://github.com/lotus/helpers/pull/16">details</a>]</li>
+<li>[<a href="https://github.com/tomkadwill">Tom Kadwill</a>] Number formatting helpers [<a href="https://github.com/lotus/helpers/pull/11">details</a>]</li>
+<li>[<a href="https://github.com/rodzyn">Marcin Olichwirowicz</a>] Custom validations [<a href="https://github.com/lotus/validations/pull/49">details</a>]</li>
+</ul>
+
+<h2>Roadmap</h2>
+
+<p><a href="http://bit.ly/lotusrb-roadmap">Trello board</a></p>
+]]></content>
+     </entry>
+     <entry>
+       <title>Weekly Changelog</title>
+       <id>http://lotusrb.org/blog/2015/04/19/weekly-changelog.html</id>
+       <link rel="alternate" href="http://lotusrb.org/blog/2015/04/19/weekly-changelog.html"/>
+       <updated>2015-04-19T12:14:00+07:00</updated>
+       <author>
+         <name>Trung Lê</name>
+       </author>
+       <summary>
+         Changelog from Apr 14th to Apr 19th 2015
+
+       </summary>
+       <content type="html"><![CDATA[<h2>Releases</h2>
+
+<p>-</p>
+
+<h2>Completed</h2>
+
+<ul>
+<li>[<a href="https://github.com/dsnipe">Dmitry Tymchuk</a>] Implementation of dirty check for entity [<a href="https://github.com/lotus/model/pull/172">details</a>]</li>
+<li>[<a href="https://github.com/mvader">Miguel Molina</a>] Add self.body to actions generated with &ndash;skip-view flag [<a href="https://github.com/lotus/lotus/pull/206">details</a>]</li>
+<li>[<a href="https://github.com/AlfonsoUceda">Alfonso Uceda</a>] Fixed lotus entity integration bug [<a href="https://github.com/lotus/validations/pull/55">details</a>]</li>
+</ul>
+
+<h2>Development</h2>
+
+<ul>
+<li>[<a href="https://github.com/AlfonsoUceda">Alfonso Uceda</a>] Added nested routes [<a href="https://github.com/lotus/router/pull/51">details</a>]</li>
+<li>[<a href="https://github.com/sungwoncho">Sung Won Cho</a>] Add Destroy CLI [<a href="https://github.com/lotus/lotus/pull/194">details</a>]</li>
+<li>[<a href="https://github.com/dsnipe">Dmitry Tymchuk</a>] Add repository timestamps [<a href="https://github.com/lotus/model/pull/169">details</a>]</li>
+<li>[<a href="https://github.com/joneslee85">Trung Lê</a>] Database migrations [<a href="https://github.com/lotus/model/pull/144">details</a>]</li>
+<li>[<a href="https://github.com/hieuk09">Hiếu Nguyễn</a>] Application generator [<a href="https://github.com/lotus/lotus/pull/181">details</a>]</li>
+<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] Form helpers [<a href="https://github.com/lotus/helpers/pull/16">details</a>]</li>
+<li>[<a href="https://github.com/tomkadwill">Tom Kadwill</a>] Number formatting helpers [<a href="https://github.com/lotus/helpers/pull/11">details</a>]</li>
+<li>[<a href="https://github.com/rodzyn">Marcin Olichwirowicz</a>] Custom validations [<a href="https://github.com/lotus/validations/pull/49">details</a>]</li>
+</ul>
+
+<h2>Roadmap</h2>
+
+<p><a href="http://bit.ly/lotusrb-roadmap">Trello board</a></p>
+]]></content>
+     </entry>
+     <entry>
+       <title>Weekly Changelog</title>
+       <id>http://lotusrb.org/blog/2015/04/13/weekly-changelog.html</id>
+       <link rel="alternate" href="http://lotusrb.org/blog/2015/04/13/weekly-changelog.html"/>
+       <updated>2015-04-13T13:04:00+07:00</updated>
+       <author>
+         <name>Trung Lê</name>
+       </author>
+       <summary>
+         Changelog from Apr 6th to Apr 13rd 2015
+
+       </summary>
+       <content type="html"><![CDATA[<h2>Releases</h2>
+
+<p>-</p>
+
+<h2>Completed</h2>
+
+<ul>
+<li>Touch created_at attribute upon entity persistence [<a href="https://github.com/lotus/model/pull/173">details</a>]</li>
+<li>Model CLI generator [<a href="https://github.com/lotus/lotus/pull/199">details</a>]</li>
+<li>Ensure to load routes when testing in isolation [<a href="https://github.com/lotus/lotus/pull/188">details</a>]</li>
+<li>Lotus::Interactor#error to return falsey value [<a href="https://github.com/lotus/utils/pull/70">details</a>]</li>
+<li>Ensure to use ::String when invoke redirect_to [<a href="https://github.com/lotus/controller/pull/100">details</a>]</li>
+<li>Add &ndash;skip-view flag to lotus generate action [<a href="https://github.com/lotus/lotus/pull/203">details</a>]</li>
+</ul>
+
+<h2>Development</h2>
+
+<ul>
+<li>Add Destroy CLI [<a href="https://github.com/lotus/lotus/pull/194">details</a>]</li>
+<li>Add repository timestamps [<a href="https://github.com/lotus/model/pull/169">details</a>]</li>
+<li>Implementation of dirty check for entity [<a href="https://github.com/lotus/model/pull/172">details</a>]</li>
+<li>Database migrations [<a href="https://github.com/lotus/model/pull/144">details</a>]</li>
+<li>Application generator [<a href="https://github.com/lotus/lotus/pull/181">details</a>]</li>
+<li>Form helpers [<a href="https://github.com/lotus/helpers/pull/16">details</a>]</li>
+<li>Number formatting helpers [<a href="https://github.com/lotus/helpers/pull/11">details</a>]</li>
+<li>Custom validations [<a href="https://github.com/lotus/validations/pull/49">details</a>]</li>
+</ul>
+
+<h2>Roadmap</h2>
+
+<p><a href="http://bit.ly/lotusrb-roadmap">Trello board</a></p>
+]]></content>
+     </entry>
+     <entry>
+       <title>Weekly Changelog</title>
+       <id>http://lotusrb.org/blog/2015/03/29/weekly-changelog.html</id>
+       <link rel="alternate" href="http://lotusrb.org/blog/2015/03/29/weekly-changelog.html"/>
+       <updated>2015-03-29T16:40:00+07:00</updated>
+       <author>
+         <name>Trung Lê</name>
+       </author>
+       <summary>
+         Changelog from Mar 24th to Mar 29nd 2015
+
+       </summary>
+       <content type="html"><![CDATA[<h2>Releases</h2>
+
+<ul>
+<li>Released lotusrb 0.3.0</li>
+<li>Released lotus-validations 0.3.0</li>
+<li>Released lotus-view 0.3.0</li>
+<li>Released lotus-controller 0.3.0</li>
+<li>Released lotus-model 0.3.0</li>
+<li>Released lotus-router 0.3.0</li>
+<li>Released lotus-utils 0.4.0</li>
+<li>Released lotus-helpers 0.1.0</li>
+</ul>
+
+<h2>Completed</h2>
+
+<ul>
+<li>Introduce link_to helper [<a href="https://github.com/lotus/helpers/pull/18">details</a>]</li>
+<li>Rename Query#desc to Query#reverse_order [<a href="https://github.com/lotus/model/pull/166">details</a>]</li>
+<li>Ensure to load routes when testing in isolation [<a href="https://github.com/lotus/lotus/pull/188">details</a>]</li>
+</ul>
+
+<h2>Development</h2>
+
+<ul>
+<li>Database migrations [<a href="https://github.com/lotus/model/pull/144">details</a>]</li>
+<li>Application generator [<a href="https://github.com/lotus/lotus/pull/181">details</a>]</li>
+<li>Form helpers [<a href="https://github.com/lotus/helpers/pull/16">details</a>]</li>
+<li>Number formatting helpers [<a href="https://github.com/lotus/helpers/pull/11">details</a>]</li>
+<li>Custom validations [<a href="https://github.com/lotus/validations/pull/49">details</a>]</li>
+</ul>
+
+<h2>Roadmap</h2>
+
+<p><a href="http://bit.ly/lotusrb-roadmap">Trello board</a></p>
+]]></content>
+     </entry>
+     <entry>
+       <title>Announcing Lotus v0.3.0</title>
+       <id>http://lotusrb.org/blog/2015/03/23/announcing-lotus-030.html</id>
+       <link rel="alternate" href="http://lotusrb.org/blog/2015/03/23/announcing-lotus-030.html"/>
+       <updated>2015-03-24T00:14:00+07:00</updated>
+       <author>
+         <name>Luca Guidi</name>
+       </author>
+       <summary>
+         This is the most exciting Lotus release ever. We have new features, improved security, and more real world use cases.
+
+       </summary>
+       <content type="html"><![CDATA[<h2>Stability and adoption</h2>
+
+<p>Lotus is getting more and more stable. This is the result of real world feedback of products that we are following closely during their development with Lotus.</p>
+
+<p>The first company that we are happy to give a warm welcome in our family is <strong><a href="https://dnsimple.com">DNSimple</a></strong>.
+They are <a href="https://speakerdeck.com/weppos/maintaining-a-5yo-ruby-project-shark-edition">maintaining</a> a rock solid Ruby code base that uses Rails for their flagship product and Lotus for their next HTTP API.</p>
+
+<h2>Security</h2>
+
+<p>Security is a vital factor for companies and a sensitive subject for users. A product won&rsquo;t survive if not proven secure.</p>
+
+<p>The Web is an insecure place. As a Community, we need to build a Security culture.
+Lotus wants to increase the level of awareness around this topic and provide defense mechanisms to common attacks.</p>
+
+<p>Please remember that <strong>there isn&rsquo;t a silver bullet</strong> when we talk about security. Nearly all protections can be debunked by experienced attackers. Developers should use all the available tools to make hackers&rsquo; life harder.</p>
+
+<h3>XSS</h3>
+
+<p><a href="https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29">XSS</a> (Cross Site Scripting) is one of the most <a href="https://www.owasp.org/index.php/Top10#OWASP_Top_10_for_2013">popular</a> threat for web applications. It&rsquo;s caused by unescaped malicious input, often sent with forms. Once the payload is on a web page, it can activate evil scripts to take over the control and eventually steal data (cookies).</p>
+
+<p>As first countermeasure, since now on, the output of views, helpers and presenters is <strong>escaped by default</strong>.</p>
+
+<p>Secondly, cookies will be sent with the <code>HttpOnly</code> option turned on. That means JavaScript won&rsquo;t be able to access them via <code>document.cookie</code>. If a malign script wants to steal data, it can&rsquo;t because the browser will stop it.</p>
+
+<p>We&rsquo;re not done yet, until we have talked about <a href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">Content Security Policy</a> (CSP). It&rsquo;s feature supported by modern browsers to regulate trusted sources of scripts, stylesheets, fonts. It&rsquo;s the ultimate defense against XSS and insecure script execution on the pages. Big products like GitHub, Twitter and GMail are using it. <strong>Lotus is the first Ruby web framework that makes CSP a default</strong>.</p>
+
+<h3>Clickhijacking</h3>
+
+<p>It&rsquo;s an <a href="http://en.wikipedia.org/wiki/Clickjacking">attack</a> that leads users to click on an invisible evil item. The trick is to embed a trusted web page via an iframe, so the user believes to interact with it, but instead their actions are hijacked by a harmful context.</p>
+
+<p>The solution is to send a <a href="https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet#X-Frame-Options_Header_Types">HTTP header</a> (<code>X-Frame-Options</code>) that regulates which source can embed your web application resources. <del><strong>Again, Lotus is the first Ruby web framework that enables this defense by default</strong>.</del></p>
+
+<h2>Features</h2>
+
+<p>With this release we have shipped powerful features to make the experience with Lotus more and more frictionless.</p>
+
+<h3>Action generators</h3>
+
+<p>While developing a feature that requires an new endpoint, it can be inconvenient to write all the required code by hand. It just breaks the flow.</p>
+
+<p>To solve this problem, we have introduced <strong>a new command line utility</strong>: <code>lotus generate action</code>. It produces an action, a view, a template, a route and their related testing code.</p>
+
+<h3>Improved application generator</h3>
+
+<p>We have improved the application generator to allow Lotus applications to meet developers&rsquo; needs.</p>
+
+<p>The command now accepts <code>--database</code> command line argument to setup the database of choice. Example <code>lotus new bookshelf --database=postgresql</code>.</p>
+
+<p>Another point of extension is the <code>--test</code> argument. It generates setup code for Minitest (default) or RSpec. Example <code>lotus new bookshelf --test=rspec</code>.</p>
+
+<p>We added the chance to generate an application for existing code base. Think of <strong>a Ruby gem that needs a web UI</strong>, with <code>lotus new .</code> it&rsquo;s now possible.</p>
+
+<h3>Database console</h3>
+
+<p>As last command line facility, we want to introduce <code>lotus db console</code>, a database REPL.</p>
+
+<h3>Helpers</h3>
+
+<p>Today we have released a new framework in the Lotus family: <code>lotus-helpers</code>. By following our tradition, it&rsquo;s <strong>shipped as a standalone gem</strong> that can be used to enhance views, templates and helpers in Ruby applications, even outside of Lotus.</p>
+
+<p>It delivers a <strong>HTML5 markup generator</strong> and <strong>routing helpers</strong>. On the security front, it brings HTML, HTML attribute and URL <strong>escape functions</strong> that follow OWASP/ESAPI suggestions.</p>
+
+<h3>Additional features</h3>
+
+<p>Database transactions, <strong>Interactors</strong>, logger and safe nested param access are only a few of the <a href="https://github.com/lotus/lotus/blob/master/FEATURES.md">features</a> that are available as of today with 0.3.0.</p>
+
+<h3>Acknowledgments</h3>
+
+<p>We want to say thank you to Alfonso Uceda Pompa, Linus Pettersson, Huy Đỗ, Hiếu Nguyễn, Tom Kadwill, Jimmy Zhang, and all the <a href="/community">wonderful people</a> that are making Lotus a better place every day.</p>
+
+<h2>What&rsquo;s next</h2>
+
+<p>We are already developing new functionalities for the next release: database migrations, form helpers, number formatters, CSRF protection and <a href="http://bit.ly/lotusrb-roadmap">more</a>.</p>
+
+<div style="display: inline">
+  <iframe src="https://ghbtns.com/github-btn.html?user=lotus&repo=lotus&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
+  <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="Announcing Lotus v0.3.0" data-url="http://lotusrb.org/blog/2015/03/23/announcing-lotus-030.html" data-count="horizontal" data-style="facebook">Vote on Hacker News</a>
+  <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
+  <script type="text/javascript">
+    reddit_url = "http://lotusrb.org/blog/2015/03/23/announcing-lotus-030.html";
+  </script>
+  <script type="text/javascript" src="//www.redditstatic.com/button/button1.js"></script>
+</div>
+]]></content>
+     </entry>
+     <entry>
+       <title>Weekly Changelog</title>
+       <id>http://lotusrb.org/blog/2015/03/22/weekly-changelog.html</id>
+       <link rel="alternate" href="http://lotusrb.org/blog/2015/03/22/weekly-changelog.html"/>
+       <updated>2015-03-22T15:10:00+07:00</updated>
+       <author>
+         <name>Trung Lê</name>
+       </author>
+       <summary>
+         Changelog from Mar 16th to Mar 22nd 2015
+
+       </summary>
+       <content type="html"><![CDATA[<h2>Releases</h2>
+
+<p>-</p>
+
+<h2>Completed</h2>
+
+<ul>
+<li>Introduced action generator [<a href="https://github.com/lotus/lotus/pull/166">details</a>]</li>
+<li>Bumped lotus-model dependency to 0.3 for new app  [<a href="https://github.com/lotus/lotus/commit/a1a5ee00eaf1189906c625c7f8f72e8e248be02e">details</a>]</li>
+<li>Renamed <code>default_cookie_options</code> to <code>cookies</code> [<a href="https://github.com/lotus/controller/commit/0f851685e3f3dfe3c14c2f8a2bbbc414b7faa3d3">details</a>]</li>
+<li>Improved error messages for undefined method in view [<a href="https://github.com/lotus/view/pull/63">details</a>]</li>
+<li>Allow Action to disable layout [<a href="https://github.com/lotus/view/pull/65">details</a>]</li>
+<li>Make flash session to persist between requests [<a href="https://github.com/lotus/controller/pull/96">details</a>]</li>
+</ul>
+
+<h2>Development</h2>
+
+<ul>
+<li>Database migrations [<a href="https://github.com/lotus/model/pull/144">details</a>]</li>
+<li>Application generator [<a href="https://github.com/lotus/lotus/pull/181">details</a>]</li>
+<li>Form helpers [<a href="https://github.com/lotus/helpers/pull/16">details</a>]</li>
+<li>Number formatting helpers [<a href="https://github.com/lotus/helpers/pull/11">details</a>]</li>
+<li>Custom validations [<a href="https://github.com/lotus/validations/pull/49">details</a>]</li>
+</ul>
+
+<h2>Roadmap</h2>
+
+<p><a href="http://bit.ly/lotusrb-roadmap">Trello board</a></p>
+]]></content>
+     </entry>
+</feed>
