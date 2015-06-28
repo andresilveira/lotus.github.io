@@ -31,10 +31,10 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <!-- <li><a href="/guides">Guides</a></li> -->
+        <li><a href="/guides">Guides</a></li>
         <li><a href="/community">Community</a></li>
         <li><a href="/blog">Blog</a></li>
-        <li><a href="https://rubygems.org/gems/lotusrb" id="nav-link-install" target="_blank" class="btn btn-primary version">Install v0.3.2</a></li>
+        <li><a href="https://rubygems.org/gems/lotusrb" id="nav-link-install" target="_blank" class="btn btn-primary version">Install v0.4.0</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -46,6 +46,22 @@
         <div class="row">
           <div class="col-md-3 hidden-sm hidden-xs sidebar">
             <ul class="nav nav-sidebar">
+              <li>
+                <span class="heading">Getting Started</span>
+                <ul class="nav">
+                  <li><a href="/guides/getting-started">Getting Started</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Architectures</span>
+                <ul class="nav">
+                  <li><a href="/guides/architectures/overview">Overview</a></li>
+                  <li><a href="/guides/architectures/container">Container</a></li>
+                  <li><a href="/guides/architectures/application">Application</a></li>
+                </ul>
+              </li>
+
               <li>
                 <span class="heading">Routing</span>
                 <ul class="nav">
@@ -81,7 +97,6 @@
                   <li><a href="/guides/views/overview">Overview</a></li>
                   <li><a href="/guides/views/basic-usage">Basic Usage</a></li>
                   <li><a href="/guides/views/templates">Templates</a></li>
-                  <li><a href="/guides/views/partials">Partials</a></li>
                   <li><a href="/guides/views/mime-types">MIME Types</a></li>
                   <li><a href="/guides/views/layouts">Layouts</a></li>
                   <li><a href="/guides/views/custom-error-pages">Custom Error Pages</a></li>
@@ -91,9 +106,45 @@
               </li>
 
               <li>
+                <span class="heading">Models</span>
+                <ul class="nav">
+                  <li><a href="/guides/models/overview">Overview</a></li>
+                  <li><a href="/guides/models/entities">Entities</a></li>
+                  <li><a href="/guides/models/repositories">Repositories</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Migrations</span>
+                <ul class="nav">
+                  <li><a href="/guides/migrations/overview">Overview</a></li>
+                  <li><a href="/guides/migrations/create-table">Create Table</a></li>
+                  <li><a href="/guides/migrations/alter-table">Alter Table</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Helpers</span>
+                <ul class="nav">
+                  <li><a href="/guides/helpers/overview">Overview</a></li>
+                  <li><a href="/guides/helpers/html5">HTML5</a></li>
+                  <li><a href="/guides/helpers/forms">Forms</a></li>
+                  <li><a href="/guides/helpers/routing">Routing</a></li>
+                  <li><a href="/guides/helpers/links">Links</a></li>
+                  <li><a href="/guides/helpers/escape">Markup Escape</a></li>
+                  <li><a href="/guides/helpers/numbers">Numbers</a></li>
+                  <li><a href="/guides/helpers/custom-helpers">Custom Helpers</a></li>
+                </ul>
+              </li>
+
+              <li>
                 <span class="heading">Command Line</span>
                 <ul class="nav">
+                  <li><a href="/guides/command-line/applications">Applications</a></li>
+                  <li><a href="/guides/command-line/generators">Generators</a></li>
+                  <li><a href="/guides/command-line/database">Database</a></li>
                   <li><a href="/guides/command-line/routes">Routes</a></li>
+                  <li><a href="/guides/command-line/version">Version</a></li>
                 </ul>
               </li>
             </ul>
@@ -106,7 +157,7 @@
               <h1>Layouts</h1>
 
 <p>Layouts are special views.
-Their role is to render the <em>&ldquo;fixed&rdquo;</em> part of the HTML markup doesn&rsquo;t change from page to page.
+Their role is to render the <em>&ldquo;fixed&rdquo;</em> part of the HTML markup that doesn&rsquo;t change from page to page.
 Think of the navigation, sidebar, header, footer, etc..</p>
 
 <p>When we generate a new application, there is a default layout called <code>Web::Views::ApplicationLayout</code> with a <code>apps/web/templates/application.html.erb</code> template.
@@ -161,7 +212,46 @@ Lotus transform layout name in application&rsquo;s configuration, by appending t
 
 <p>If we want to turn off this feature entirely, we can set <code>layout nil</code> into the application&rsquo;s configuration.</p>
 
-<h2>Content For</h2>
+<h2>Optional Content</h2>
+
+<p>There are some cases when we want to render a content only for certain resources.
+Think of some javascripts to include only in specific pages.</p>
+
+<p>Given the following template for a layout:</p>
+<pre class="language-ruby erb"><code><span class="cp">&lt;!doctype HTML&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="c">&lt;!-- ... --&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="c">&lt;!-- ... --&gt;</span>
+    <span class="nt">&lt;footer&gt;</span>
+      <span class="cp">&lt;%=</span> <span class="n">content</span> <span class="ss">:javascripts</span> <span class="cp">%&gt;</span>
+    <span class="nt">&lt;/footer&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+
+<p>With following views:</p>
+<pre class="language-ruby ruby"><code><span class="k">module</span> <span class="nn">Web::Views::Books</span>
+  <span class="k">class</span> <span class="nc">Index</span>
+    <span class="kp">include</span> <span class="no">Web</span><span class="o">::</span><span class="no">View</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>and</p>
+<pre class="language-ruby ruby"><code><span class="k">module</span> <span class="nn">Web::Views::Books</span>
+  <span class="k">class</span> <span class="nc">Show</span>
+    <span class="kp">include</span> <span class="no">Web</span><span class="o">::</span><span class="no">View</span>
+
+    <span class="k">def</span> <span class="nf">javascripts</span>
+      <span class="n">raw</span> <span class="sx">%(&lt;script src="/path/to/script.js"&gt;&lt;/script&gt;)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>The first view doesn&rsquo;t respond to <code>#javascripts</code>, so it safely ignores it.
+Our second object (<code>Web::Views::Books::Show</code>) respond to that method, so the result will be included in the final markup.</p>
 
             </div>
           </div>
@@ -186,18 +276,18 @@ Lotus transform layout name in application&rsquo;s configuration, by appending t
     <div class="row">
       <a class="logo col-md-3" href="/">logo</a>
         <div class="col-md-4">
-          <span class="date">May 31, 2015</span>
-          <h4>Weekly Changelog</h4>
-          <p>Changelog from May 16 2015 to May 31 2015
+          <span class="date">June 23, 2015</span>
+          <h4>Announcing Lotus v0.4.0</h4>
+          <p>Features: additional architecture, database migrations, HTML5 form helpers, CSRF Protection, Force SSL. New Core Team member, Rails Girls Summer of Code and Guides!
 </p>
-          <a href="/blog/2015/05/31/weekly-changelog.html">Read more...</a>
+          <a href="/blog/2015/06/23/announcing-lotus-040.html">Read more...</a>
         </div>
         <div class="col-md-4">
-          <span class="date">May 22, 2015</span>
-          <h4>Announcing Lotus v0.3.2</h4>
-          <p>Lotus patch release: Automatic secure cookies, action file send and routing helpers, optional contents for views, Lotus.root and bug fixes.
+          <span class="date">June 17, 2015</span>
+          <h4>Introducing Database Migrations</h4>
+          <p>New feature for the upcoming v0.4.0: database migrations. Fast operations for schema: create, drop, migrate and prepare database. Keep migrations healthy with experimental feature.
 </p>
-          <a href="/blog/2015/05/22/announcing-lotus-032.html">Read more...</a>
+          <a href="/blog/2015/06/17/introducing-database-migrations.html">Read more...</a>
         </div>
     </div>
   </div>
